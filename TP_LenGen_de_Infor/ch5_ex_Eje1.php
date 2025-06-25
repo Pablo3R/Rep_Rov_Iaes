@@ -54,7 +54,7 @@ function color($e){
 <html>
     <head>
         <title>Pest.Resp. 5-Eje1</title>
-        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="ch5_ex_Eje2_styles.css">
     </head>
     <body bgcolor="<?php echo color($edad) ?>">
         <!--<link rel="stylesheet" href="styles.css">-->
@@ -62,5 +62,6 @@ function color($e){
             <p>Su nombre es: <?=$nombre?></p>
             <p>Su edad es: <?=$view?></p>
             <p>Precio: <?=desc($edad)?></p>
+            <button onclick="history.back()" class="btn-volver">Volver</button>
     </body>
 </html>
