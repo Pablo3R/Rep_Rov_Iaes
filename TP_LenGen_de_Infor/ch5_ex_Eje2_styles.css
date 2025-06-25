@@ -1,0 +1,74 @@
+/* estilos.css */
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f8fa; /* fondo muy claro, típico de Twitter */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0f1419; /* texto principal oscuro */
+}
+
+/* Para el body con fondo dinámico, ponemos un overlay blanco semi-transparente */
+body[bgcolor] {
+    position: relative;
+}
+
+body[bgcolor]::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: white;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+/* Contenedor centrado */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d9bf0; /* azul Twitter */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Párrafos info */
+p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    border-bottom: 1px solid #e1e8ed;
+    padding-bottom: 0.5rem;
+}
+
+/* Precio con estilo destacado */
+p:last-of-type {
+    font-weight: 600;
+    color: #1d9bf0;
+    font-size: 1.25rem;
+}
+
+/* Responsive y contenedor */
+body > * {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.btn-volver {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 10px 20px;
+    background-color: #1d9bf0;
+    color: white;
+    border: none;
+    border-radius: 9999px; /* botón redondeado estilo pill */
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+    background-color: #1583d6;
+}
